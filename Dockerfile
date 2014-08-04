@@ -1,7 +1,7 @@
 FROM phusion/passenger-full:0.9.11
 MAINTAINER Sean Chatman <xpointsh@gmail.com>
 
-gem install passenger
+RUB gem install passenger
 
 RUN adduser web --home /home/web --shell /bin/bash --disabled-password --gecos ""
 
@@ -21,4 +21,4 @@ USER web
 
 WORKDIR /var/www
 
-#CMD ["bundle", "exec", "foreman", "start"]
+CMD ["bundle", "exec", "foreman", "start"]

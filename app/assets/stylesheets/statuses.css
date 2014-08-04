@@ -1,0 +1,15 @@
+.status {
+  border-bottom: solid 1px black;
+  padding: 5px 0; }
+
+.status p {
+  margin: 4px 0; }
+
+.status .admin {
+  display: none; }
+
+.status.hover {
+  background: #808080; }
+
+.status.hover .admin {
+  display: inline; }
